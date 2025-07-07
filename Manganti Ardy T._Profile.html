@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home - Ardy T. Manganti</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #top {
+      background-color: #d3d3d3;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    #profile {
+      background-color: #ffffff;
+      padding: 40px 20px;
+    }
+
+    #contact, #feedback {
+      background-color: #ffffff;
+      padding: 50px 20px;
+    }
+
+    footer {
+      background-color: #d3d3d3;
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    nav a {
+      margin: 0 25px;
+      text-decoration: none;
+      color: #333;
+      font-size: 24px;
+    }
+
+    nav a:hover {
+      color: #007bff;
+    }
+
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 50%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    legend {
+      padding: 0 10px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .rating {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .rating label {
+      margin: 0;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="top">
+    <h1 style="font-size: 60px;">Ardy T. Manganti</h1>
+    <nav>
+      <a href="ardyy.html">Home</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+  </div>
+
+  <div id="profile">
+    <table width="100%" cellspacing="0" cellpadding="10">
+      <tr>
+        <td width="50%" align="center">
+          <img src="profile.jpg" alt="Profile Picture" width="700" height="700" />
+        </td>
+
+        <td width="50%" align="center" style="vertical-align: top;">
+          <div style="max-width: 600px; background-color: #f9f9f9; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+
+            <h2 style="font-size: 36px; margin-bottom: 10px;">About Me</h2>
+            <p style="font-size: 18px; line-height: 1.6;">Hi there! I am <strong>Ardy T. Manganti</strong>, a PHINMA Saint Jude College student. I have a strong interest in technology and am always willing to learn new things, particularly about system development and programming.</p>
+            <p style="font-size: 18px; line-height: 1.6;">I find it exciting to work on projects that can improve or increase the efficiency of steps, and as a student, I like exploring how software can help in solving real-life problems. Backend development especially interests me, and I enjoy working with object-oriented programming languages like C# and Java.</p>
+            <p style="font-size: 18px; line-height: 1.6;">I'm still learning, but I always aim to write clean and organized code. I'm dedicated to improving my skills and knowledge every day, both in school and through personal practice.</p>
+
+            <h3 style="font-size: 28px; margin-top: 30px; color: #007bff;">🛠️ Skills</h3>
+            <ul style="list-style: none; padding: 0; font-size: 20px; margin-top: 10px;">
+              <li>💻 Java</li>
+              <li>🧩 C#</li>
+            </ul>
+
+            <h3 style="font-size: 28px; margin-top: 30px; color: #007bff;">🔗 Connect with Me</h3>
+            <p style="font-size: 20px;">
+              <a href="https://www.facebook.com/ardy.manganti.927" target="_blank" style="text-decoration: none; color: #3b5998;">📘 Facebook</a> |
+              <a href="https://www.linkedin.com/in/ardytuazonmanganti/" target="_blank" style="text-decoration: none; color: #0a66c2;">💼 LinkedIn</a>
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div align="center" id="contact">
+  <h3 style="font-size: 48px;">Contact Us</h3>
+  <form id="contact-form" action="https://formspree.io/f/xpwreern" method="post">
+    <fieldset>
+      <legend>Contact Information</legend>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" maxlength="100" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" maxlength="100" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject of your message" maxlength="100" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." maxlength="1000" required></textarea>
+    </fieldset>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<!-- ✅ Simple Form Validation Script -->
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    const name = document.getElementById("fullname").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !subject || !message) {
+      event.preventDefault(); // Stop the form from submitting
+      alert("❌ Please fill in all the fields before submitting.");
+    }
+  });
+</script>
+
+
+  <div align="center" id="feedback">
+  <h3 style="font-size: 48px;">Feedback</h3>
+  <form id="feedback-form" action="https://formspree.io/f/xkgbaaba" method="post">
+    <fieldset>
+      <legend>Rate and Share Feedback</legend>
+      <p><b>Rate this page:</b></p>
+      <div class="rating">
+        <label><input type="radio" name="rating" value="1"> 1 Star</label>
+        <label><input type="radio" name="rating" value="2"> 2 Stars</label>
+        <label><input type="radio" name="rating" value="3"> 3 Stars</label>
+        <label><input type="radio" name="rating" value="4"> 4 Stars</label>
+        <label><input type="radio" name="rating" value="5"> 5 Stars</label>
+      </div><br>
+
+      <label for="type"><b>Feedback Type:</b></label>
+      <select name="type" id="type" required>
+        <option value="">-- Select Feedback Type --</option>
+        <option value="bug">Bug Report</option>
+        <option value="suggestion">Suggestion</option>
+        <option value="praise">Praise</option>
+      </select>
+
+      <label for="comments"><b>Comments:</b></label>
+      <textarea name="comments" id="comments" rows="5" placeholder="Enter your feedback here..." maxlength="1000" required></textarea>
+
+      <label>
+        <input type="checkbox" id="agree" name="agree" required>
+        I agree to the terms and conditions
+      </label>
+    </fieldset>
+    <input type="submit" value="Submit Feedback">
+  </form>
+</div>
+
+<!-- ✅ Validation Script -->
+<script>
+  document.getElementById("feedback-form").addEventListener("submit", function(event) {
+    const rating = document.querySelector('input[name="rating"]:checked');
+    const type = document.getElementById("type").value.trim();
+    const comments = document.getElementById("comments").value.trim();
+    const agree = document.getElementById("agree").checked;
+
+    if (!rating) {
+      alert("❌ Please select a rating.");
+      event.preventDefault();
+      return;
+    }
+
+    if (!type) {
+      alert("❌ Please select a feedback type.");
+      event.preventDefault();
+      return;
+    }
+
+    if (!comments) {
+      alert("❌ Please enter your comments.");
+      event.preventDefault();
+      return;
+    }
+
+    if (!agree) {
+      alert("❌ You must agree to the terms and conditions.");
+      event.preventDefault();
+      return;
+    }
+  });
+</script>
+
+
+  <footer>
+    <p>&copy; 2025 Ardy T. Manganti. All rights reserved.</p>
+    <p><a href="#top">Back to Top</a></p>
+  </footer>
+
+</body>
+</html>
