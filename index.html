@@ -131,10 +131,8 @@
         <td width="50%" align="center">
           <img src="profile.jpg" alt="Profile Picture" width="700" height="700" />
         </td>
-
         <td width="50%" align="center" style="vertical-align: top;">
           <div style="max-width: 600px; background-color: #f9f9f9; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
-
             <h2 style="font-size: 36px; margin-bottom: 10px;">About Me</h2>
             <p style="font-size: 18px; line-height: 1.6;">Hi there! I am <strong>Ardy T. Manganti</strong>, a PHINMA Saint Jude College student. I have a strong interest in technology and am always willing to learn new things, particularly about system development and programming.</p>
             <p style="font-size: 18px; line-height: 1.6;">I find it exciting to work on projects that can improve or increase the efficiency of steps, and as a student, I like exploring how software can help in solving real-life problems. Backend development especially interests me, and I enjoy working with object-oriented programming languages like C# and Java.</p>
@@ -158,115 +156,110 @@
   </div>
 
   <div align="center" id="contact">
-  <h3 style="font-size: 48px;">Contact Us</h3>
-  <form id="contact-form" action="https://formspree.io/f/xpwreern" method="post">
-    <fieldset>
-      <legend>Contact Information</legend>
-      <label for="fullname">Full Name:</label>
-      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" maxlength="100" required>
+    <h3 style="font-size: 48px;">Contact Us</h3>
+    <form id="contact-form">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" maxlength="100" required>
 
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" maxlength="100" required>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" maxlength="100" required>
 
-      <label for="subject">Subject:</label>
-      <input type="text" id="subject" name="subject" placeholder="Subject of your message" maxlength="100" required>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject of your message" maxlength="100" required>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." maxlength="1000" required></textarea>
-    </fieldset>
-    <input type="submit" value="Submit">
-  </form>
-</div>
-
-<!-- ✅ Simple Form Validation Script -->
-<script>
-  document.getElementById("contact-form").addEventListener("submit", function(event) {
-    const name = document.getElementById("fullname").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const subject = document.getElementById("subject").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    if (!name || !email || !subject || !message) {
-      event.preventDefault(); // Stop the form from submitting
-      alert("❌ Please fill in all the fields before submitting.");
-    }
-  });
-</script>
-
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." maxlength="1000" required></textarea>
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 
   <div align="center" id="feedback">
-  <h3 style="font-size: 48px;">Feedback</h3>
-  <form id="feedback-form" action="https://formspree.io/f/xkgbaaba" method="post">
-    <fieldset>
-      <legend>Rate and Share Feedback</legend>
-      <p><b>Rate this page:</b></p>
-      <div class="rating">
-        <label><input type="radio" name="rating" value="1"> 1 Star</label>
-        <label><input type="radio" name="rating" value="2"> 2 Stars</label>
-        <label><input type="radio" name="rating" value="3"> 3 Stars</label>
-        <label><input type="radio" name="rating" value="4"> 4 Stars</label>
-        <label><input type="radio" name="rating" value="5"> 5 Stars</label>
-      </div><br>
+    <h3 style="font-size: 48px;">Feedback</h3>
+    <form id="feedback-form">
+      <fieldset>
+        <legend>Rate and Share Feedback</legend>
+        <p><b>Rate this page:</b></p>
+        <div class="rating">
+          <label><input type="radio" name="rating" value="1"> 1 Star</label>
+          <label><input type="radio" name="rating" value="2"> 2 Stars</label>
+          <label><input type="radio" name="rating" value="3"> 3 Stars</label>
+          <label><input type="radio" name="rating" value="4"> 4 Stars</label>
+          <label><input type="radio" name="rating" value="5"> 5 Stars</label>
+        </div><br>
 
-      <label for="type"><b>Feedback Type:</b></label>
-      <select name="type" id="type" required>
-        <option value="">-- Select Feedback Type --</option>
-        <option value="bug">Bug Report</option>
-        <option value="suggestion">Suggestion</option>
-        <option value="praise">Praise</option>
-      </select>
+        <label for="type"><b>Feedback Type:</b></label>
+        <select name="type" id="type" required>
+          <option value="">-- Select Feedback Type --</option>
+          <option value="bug">Bug Report</option>
+          <option value="suggestion">Suggestion</option>
+          <option value="praise">Praise</option>
+        </select>
 
-      <label for="comments"><b>Comments:</b></label>
-      <textarea name="comments" id="comments" rows="5" placeholder="Enter your feedback here..." maxlength="1000" required></textarea>
+        <label for="comments"><b>Comments:</b></label>
+        <textarea name="comments" id="comments" rows="5" placeholder="Enter your feedback here..." maxlength="1000" required></textarea>
 
-      <label>
-        <input type="checkbox" id="agree" name="agree" required>
-        I agree to the terms and conditions
-      </label>
-    </fieldset>
-    <input type="submit" value="Submit Feedback">
-  </form>
-</div>
-
-<!-- ✅ Validation Script -->
-<script>
-  document.getElementById("feedback-form").addEventListener("submit", function(event) {
-    const rating = document.querySelector('input[name="rating"]:checked');
-    const type = document.getElementById("type").value.trim();
-    const comments = document.getElementById("comments").value.trim();
-    const agree = document.getElementById("agree").checked;
-
-    if (!rating) {
-      alert("❌ Please select a rating.");
-      event.preventDefault();
-      return;
-    }
-
-    if (!type) {
-      alert("❌ Please select a feedback type.");
-      event.preventDefault();
-      return;
-    }
-
-    if (!comments) {
-      alert("❌ Please enter your comments.");
-      event.preventDefault();
-      return;
-    }
-
-    if (!agree) {
-      alert("❌ You must agree to the terms and conditions.");
-      event.preventDefault();
-      return;
-    }
-  });
-</script>
-
+        <label>
+          <input type="checkbox" id="agree" name="agree" required>
+          I agree to the terms and conditions
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit Feedback">
+    </form>
+  </div>
 
   <footer>
     <p>&copy; 2025 Ardy T. Manganti. All rights reserved.</p>
     <p><a href="#top">Back to Top</a></p>
   </footer>
 
+  <!-- ✅ AJAX-based Form Submission Script -->
+  <script>
+    async function handleFormSubmit(formId, endpoint, successMsg) {
+      const form = document.getElementById(formId);
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const formObj = Object.fromEntries(formData.entries());
+
+        if (formId === "contact-form") {
+          if (!formObj.fullname || !formObj.email || !formObj.subject || !formObj.message) {
+            alert("❌ Please fill in all the fields.");
+            return;
+          }
+        } else if (formId === "feedback-form") {
+          if (!formObj.rating || !formObj.type || !formObj.comments || !formObj.agree) {
+            alert("❌ Please complete all feedback fields and agree to the terms.");
+            return;
+          }
+        }
+
+        try {
+          const response = await fetch(endpoint, {
+            method: "POST",
+            headers: { "Accept": "application/json" },
+            body: formData
+          });
+
+          if (response.ok) {
+            alert(successMsg);
+            form.reset();
+          } else {
+            alert("❌ Something went wrong. Please try again.");
+          }
+        } catch (error) {
+          alert("❌ Error submitting form. Please try again later.");
+          console.error(error);
+        }
+      });
+    }
+
+    // Bind both forms
+    handleFormSubmit("contact-form", "https://formspree.io/f/xpwreern", "✅ Thank you! Your message was sent.");
+    handleFormSubmit("feedback-form", "https://formspree.io/f/xkgbaaba", "✅ Thank you for your feedback!");
+  </script>
 </body>
 </html>
